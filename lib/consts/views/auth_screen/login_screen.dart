@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 import 'package:martbuz_app/consts/consts.dart';
 import 'package:martbuz_app/consts/lists.dart';
 import 'package:martbuz_app/consts/views/auth_screen/signup_screen.dart';
-import 'package:martbuz_app/consts/views/home_screen/home_screen.dart';
+import 'package:martbuz_app/consts/views/home_screen/home.dart';
 
 import 'package:martbuz_app/consts/widgets_common/background_widget.dart';
 import 'package:martbuz_app/consts/widgets_common/button_widget.dart';
@@ -47,7 +47,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                 button(title: login, color: redColor, textColor: whiteColor, 
                 onPress: (){
-                  Get.to(() => HomeScreen());
+                  Get.to(() => Home());
                 })
                 .box
                 .width(context.screenWidth - 50)
