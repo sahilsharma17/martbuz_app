@@ -18,3 +18,6 @@ const confirmPassword = "Confirm Password";
 const alreadyHaveAcc = "Already have an account?";
 
 const home = "Home", categories = "Categories", cart = "Cart", profile = "Profile";
+
+const search = "Search Anything", todaydeal = "Today's Deals", topSellers = "Top Sellers", flashSale = "Flash Sale", brand = "Brand", topCategory = "Top Category";
+const featuredCategories = "Featured Categories";
