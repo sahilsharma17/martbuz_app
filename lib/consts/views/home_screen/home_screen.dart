@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
+
 import 'package:martbuz_app/consts/consts.dart';
 import 'package:martbuz_app/consts/lists.dart';
+import 'package:martbuz_app/consts/views/home_screen/components/featured_category_btns.dart';
+import 'package:martbuz_app/consts/views/home_screen/components/featured_product_card.dart';
+import 'package:martbuz_app/consts/views/home_screen/components/product_grid.dart';
 import 'package:martbuz_app/consts/widgets_common/home_btns.dart';
 import 'package:martbuz_app/consts/widgets_common/search_bar/search_bar_widget.dart';
 
@@ -110,6 +113,85 @@ class HomeScreen extends StatelessWidget {
                   .color(darkFontGrey)
                   .make()
                 ),
+                15.heightBox,
+
+                SingleChildScrollView(
+                  scrollDirection : Axis.horizontal, 
+                  child: Row(
+                    children: List.generate(
+                      3, 
+                      (index) => Column(
+                        children: [
+                          featuredCategoryBtn(
+                            title: featuredImagesTitle1[index], 
+                            image: featuredImages1[index]
+                          ),
+                          10.heightBox,
+                          featuredCategoryBtn(
+                            title: featuredImagesTitle2[index], 
+                            image: featuredImages2[index]
+                          ),
+                          5.heightBox,
+                        ],
+                      )
+                    ),
+                  ),
+                ),
+
+                15.heightBox,
+                Container(
+                  // height: context.screenHeight * 0.4,
+                  padding: EdgeInsets.all(12),
+                  width: double.infinity,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(imgBackground1),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      featuredProducts
+                      .text
+                      .white
+                      .fontFamily(bold)
+                      .size(18)
+                      .make(),
+                    
+                    10.heightBox,
+                    featuredProductCard(),
+                    ],
+                  ),
+                ),
+                10.heightBox,
+
+                // swiper 3
+                VxSwiper.builder(
+                  aspectRatio: 16/9,
+                  autoPlay: true,
+                  enableInfiniteScroll: true,
+                  height: 140,
+                  enlargeCenterPage: true,
+                  autoPlayAnimationDuration: Duration(milliseconds: 500),
+                  itemCount: sliderbrandList2.length, 
+                  itemBuilder: (context, index) {
+                    return Container(
+                      child: Image.asset(
+                        sliderbrandList2[index],
+                        fit: BoxFit.fill,)
+                        .box
+                        .rounded.clip(Clip.antiAlias)
+                        .shadowXs
+                        .margin(const EdgeInsets.all(5))
+                        .make(),
+                    );
+                }),
+                
+                // All Product grid items
+                10.heightBox,
+                allProducts.text.bold.color(darkFontGrey).size(18).make(),
+                ProductGrid(),
                 ],
               ),
             ),

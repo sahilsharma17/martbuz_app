@@ -9,7 +9,6 @@ const Color redColor = Color.fromRGBO(230, 46, 4, 1);
 const Color golden = Color.fromRGBO(255, 168, 0, 1);
 const Color green = Color.fromRGBO(4, 196, 33, 1);
 const Color blue = Color.fromRGBO(47, 47, 221, 1);
-const Color transparent = Colors.transparent;
 const Color grey = Colors.grey;
 const Color black12 = Colors.black12;
 const Color black26 = Colors.black26;
