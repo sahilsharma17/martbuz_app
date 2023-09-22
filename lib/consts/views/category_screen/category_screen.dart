@@ -9,13 +9,13 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return backgroundWidget(
+      image: imgBackground,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
           title: "Category"
           .text
-          .white
           .fontFamily(bold)
           .make(),
         ),

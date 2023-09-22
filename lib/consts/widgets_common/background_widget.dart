@@ -1,10 +1,10 @@
 import 'package:martbuz_app/consts/consts.dart';
 
-Widget backgroundWidget({required Widget child}) {
+Widget backgroundWidget({image, required Widget child}) {
   return Container(
-    decoration: const BoxDecoration(
+    decoration: BoxDecoration(
       image: DecorationImage(
-        image: AssetImage(imgBackground),
+        image: AssetImage(image),
         fit: BoxFit.fill,
       ),
     ),

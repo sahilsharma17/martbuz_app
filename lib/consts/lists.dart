@@ -57,7 +57,7 @@ const categoryTitle = [
   "Furniture",
   "Electronics",
   "Foot Wears",
-  "HandBags ",
+  "HandBags",
 ];
 
 const categoryImage = [
