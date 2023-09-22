@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return backgroundWidget(child: Scaffold(
+    return backgroundWidget(image: imgBackground,child: Scaffold(
       resizeToAvoidBottomInset: false,
       body: Center(
         child: Column(

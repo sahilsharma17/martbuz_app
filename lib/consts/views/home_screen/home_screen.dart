@@ -5,7 +5,7 @@ import 'package:martbuz_app/consts/views/home_screen/components/featured_categor
 import 'package:martbuz_app/consts/views/home_screen/components/featured_product_card.dart';
 import 'package:martbuz_app/consts/views/home_screen/components/product_grid.dart';
 import 'package:martbuz_app/consts/widgets_common/home_btns.dart';
-import 'package:martbuz_app/consts/widgets_common/search_bar/search_bar_widget.dart';
+import 'package:martbuz_app/consts/views/home_screen/components/search_bar_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
