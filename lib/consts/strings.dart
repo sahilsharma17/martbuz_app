@@ -9,6 +9,7 @@ const password = "Password";
 const passwordHint = "********";
 const forgetPassword = "Forget Password";
 const login = "Log In";
+const logout = "Log Out";
 const signup = "Sign Up";
 const createNewAccount = "Create a New Account";
 const loginWith = "Login With";
@@ -45,3 +46,7 @@ const video = "Video",
     returnpolicy = "Return Policy",
     supportpolicy = "Support Policy",
     productsyoumaylike = "Products you may like";
+
+const wishlist = "My Wishlist",
+      orders = "My Orders",
+      messages = "Messages";

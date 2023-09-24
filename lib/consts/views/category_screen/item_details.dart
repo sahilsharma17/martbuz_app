@@ -1,7 +1,6 @@
 import 'package:martbuz_app/consts/consts.dart';
 import 'package:martbuz_app/consts/lists.dart';
 import 'package:martbuz_app/consts/views/home_screen/components/featured_product_card.dart';
-import 'package:martbuz_app/consts/views/home_screen/components/product_grid.dart';
 import 'package:martbuz_app/consts/widgets_common/button_widget.dart';
 
 class ItemDetails extends StatelessWidget {

@@ -82,3 +82,6 @@ const itemDetailsButtonList = [video,
     returnpolicy,
     supportpolicy,
 ];
+
+const profileBtnList = [wishlist, orders, messages];
+const profileBtnIcons = [icOrder, icOrders, icMessages];
