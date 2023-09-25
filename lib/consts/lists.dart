@@ -74,3 +74,11 @@ const categoryImage = [
   imgP4,
   imgP5,
 ];
+
+// Item details List
+const itemDetailsButtonList = [video,
+    reviews,
+    sellerpolicy,
+    returnpolicy,
+    supportpolicy,
+];
